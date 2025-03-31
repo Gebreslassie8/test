@@ -1,0 +1,15 @@
+/* styles.css */
+.calculator-display {
+  height: 60px;
+  font-size: 2rem;
+  text-align: right;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blueviolet;
+}

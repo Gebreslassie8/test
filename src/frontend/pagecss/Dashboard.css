@@ -1,0 +1,27 @@
+/* src/Dashboard.css */
+.dashboard-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #c8e6c9;
+}
+
+.dashboard-container h1 {
+  color: #388e3c;
+}
+
+.dashboard-container p {
+  font-size: 1.2em;
+}
+
+.dashboard-container nav {
+  margin-top: 20px;
+}
+
+.dashboard-container nav a {
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.dashboard-container nav a:hover {
+  text-decoration: underline;
+}

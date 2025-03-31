@@ -1,0 +1,173 @@
+express: Web framework
+mysql2: MySQL database integration
+cors: Handle CORS policy
+dotenv: Manage environment variables
+jsonwebtoken: User authentication (JWT)
+bcryptjs: Password encryption
+multer: File uploads
+
+
+
+
+ in Resource Core Library System
+ResourceCoreLibrary.docx
+DOCX 39.88KB
+based onthis how many actors are there and there in detail
+Based on the provided document, the Resource Core Library (Content Management System) has the following actors, each with detailed responsibilities and interactions:
+
+1. End-User
+Description: General users who access the system to search, view, and download content.
+Roles:
+
+Internal Users (ITPC employees, researchers, innovators).
+
+External Users (students, job seekers, industry professionals).
+Interactions:
+
+Register and authenticate via login.
+
+Search/browse content using keywords, filters, and metadata.
+
+View content previews or download resources (based on permissions).
+
+Update personal profiles and account settings.
+
+Request password resets or delete their own accounts.
+
+2. Admin
+Description: Superusers with full system control, including user and content management.
+Interactions:
+
+Manage user roles/permissions (assign/revoke access).
+
+Delete user accounts (inactive or flagged).
+
+Upload/delete content (oversight role).
+
+Configure system-wide settings (e.g., security policies, access levels).
+
+Generate and review analytics/reports (user engagement, content performance).
+
+3. Content Manager
+Description: Specialized users responsible for curating and organizing content.
+Interactions:
+
+Upload, categorize, and tag resources (e.g., PDFs, videos, research papers).
+
+Apply metadata (title, author, publication date) for searchability.
+
+Delete outdated content (with admin oversight).
+
+Ensure content adheres to organizational guidelines.
+
+4. System
+Description: The CMS platform itself, automating backend processes.
+Interactions:
+
+Validate user credentials during login/registration.
+
+Index and store uploaded content with metadata.
+
+Execute search queries and display filtered results.
+
+Enforce role-based access controls (RBAC).
+
+Track analytics (downloads, views) and update logs.
+
+Send notifications (e.g., successful uploads, account deletions).
+
+Summary of Actors:
+Actor	Key Responsibilities
+End-User	Access content, manage personal accounts, search/download resources.
+Admin	Oversee users, permissions, content, and system security; generate reports.
+Content Manager	Upload, categorize, and maintain content quality.
+System	Automate authentication, search, access control, and analytics.
+Notes:
+Overlap: Admins can perform all Content Manager tasks, but not vice versa.
+
+Exclusions: Developers/QA testers are part of the project team but not system actors.
+
+Integration: The system interacts with the ITPC Portal (external system) for seamless access.
+
+This breakdown aligns with the use cases, functional requirements, and operational guidelines outlined in the document.
+
+you can
+Here’s a refined and structured breakdown of the actors in the Resource Core Library CMS, based on the document:
+
+Actors in the Resource Core Library System
+End-User
+
+Roles:
+
+Internal Users: ITPC employees, researchers, innovators.
+
+External Users: Students, job seekers, industry professionals.
+
+Key Interactions:
+
+Register/login (with MFA/SSO support).
+
+Search/browse content using keywords, filters, and metadata.
+
+Preview/download resources (subject to permissions).
+
+Manage personal profiles (update details, delete accounts).
+
+Admin
+
+Privileges: Full system control.
+
+Key Interactions:
+
+Create/delete user accounts and assign roles (e.g., Content Manager).
+
+Configure RBAC (e.g., restrict content uploads to specific roles).
+
+Delete outdated content or manage bulk operations.
+
+Access analytics dashboards (track engagement, content performance).
+
+Content Manager
+
+Privileges: Curate content (no user management rights).
+
+Key Interactions:
+
+Upload resources (PDFs, videos, etc.) with metadata (title, author, tags).
+
+Categorize content into topics/subcategories.
+
+Delete/archive outdated files (with admin approval if required).
+
+System (Non-human Actor)
+
+Automated Functions:
+
+Authentication/Authorization (validate credentials, enforce RBAC).
+
+Index/search (retrieve content based on queries/filters).
+
+Logging (track downloads, views, and user activity).
+
+Notifications (confirm uploads, account changes).
+
+ITPC Portal (External System)
+
+Integration Role:
+
+Sync user credentials (SSO).
+
+Share analytics/data for unified reporting.
+
+Actor-Requirement Mapping
+Actor	Linked Functional Requirements
+End-User	User registration, search/discovery, content access/download.
+Admin	User management, RBAC, analytics/reporting, content deletion.
+Content Manager	Content upload, metadata tagging, categorization.
+System	Authentication, search indexing, access control, notifications.
+Key Exclusions (Per Document Scope)
+Mobile App Users: Not an actor (web-only platform).
+
+AI/Advanced Features: No "Recommendation Engine" actor (basic search only).
+
+This aligns with the use cases, functional requirements, and business rules specified in Sections 4–6 of

@@ -1,0 +1,29 @@
+/* src/HomePage.css */
+.homepage-container {
+  text-align: center;
+  background-color: blueviolet;
+  padding: 20px;
+}
+
+.homepage-container h1 {
+  color: #333;
+}
+
+.homepage-container p {
+  font-size: 1.2em;
+}
+
+.homepage-container nav {
+  margin-top: 20px;
+}
+
+.homepage-container nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.homepage-container nav a:hover {
+  text-decoration: underline;
+}

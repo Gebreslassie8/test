@@ -1,0 +1,28 @@
+/* src/AboutPage.css */
+.aboutpage-container {
+  padding: 20px;
+  text-align: center;
+  background-color: blueviolet;
+}
+
+.aboutpage-container h1 {
+  color: #00796b;
+}
+
+.aboutpage-container p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.aboutpage-container nav {
+  margin-top: 20px;
+}
+
+.aboutpage-container nav a {
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.aboutpage-container nav a:hover {
+  text-decoration: underline;
+}
